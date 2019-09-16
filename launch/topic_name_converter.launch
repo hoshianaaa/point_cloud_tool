@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="input_name"    default="velodyne_points"/>
+  <arg name="output_name"   default="points_raw"/>
+
+  <node name="topic_name_converter" pkg="point_cloud_tool" type="topic_name_converter" output="screen">
+   <param name="input_name" value="$(arg input_name)" />
+   <param name="output_name" value="$(arg output_name)" />
+  </node>
+</launch>

@@ -27,6 +27,7 @@ TopicNameConverter::TopicNameConverter()
 
 void TopicNameConverter::cloudCallback(const sensor_msgs::PointCloud2ConstPtr& msgs)
 {
+    std::cout << "call back point cloud" << std::endl;
     cloud_pub_.publish(*msgs);
 }
 

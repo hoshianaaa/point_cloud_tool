@@ -211,3 +211,7 @@ include_directories(
 # catkin_add_nosetests(test)
 add_executable(topic_name_converter src/topic_name_converter.cpp)
 target_link_libraries(topic_name_converter ${catkin_LIBRARIES})
+add_executable(ring_publisher src/ring_publisher.cpp)
+target_link_libraries(ring_publisher ${catkin_LIBRARIES})
+add_executable(one_data_sub src/one_data_sub.cpp)
+target_link_libraries(one_data_sub ${catkin_LIBRARIES})
